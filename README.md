@@ -14,8 +14,8 @@
 
 int main() {
     ccutil::BlockingQueue<int> queue;
-    queue.push(1);
-    int val = queue.pop();
+    queue.put(1);
+    int val = queue.take();
     return 0;
 }
 ```
